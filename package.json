@@ -1,0 +1,15 @@
+{
+  "name": "apiresttomapedidos",
+  "version": "1.0.0",
+  "description": "Api para la toma de pedidos de un restaurante",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leidy - Carlos",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}

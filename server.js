@@ -82,7 +82,7 @@ let drinks = [
 let order = 	[
 			{
 				user:'Leidy',
-				device:'','tablet1',
+				device:'tablet1',
 				dishes:['Bandeja Paisa','Cuy'],
 				drinks:['Gaseosa','Cerveza']
 			}

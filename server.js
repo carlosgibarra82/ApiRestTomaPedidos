@@ -6,7 +6,11 @@ const app = express()
 const hostname = '127.0.0.1';
 const PORT = process.env.PORT || 1234
 
-let users = [{id: '1', user: 'carlos', password: '123', name: 'carlos', email: 'carlosgibarra@gmail.com'}];
+let users = [
+    {username: 'Leidy', password: '123456'},
+    {username: 'Carlos', password: '123456'}
+];
+
 let clients = ['mesa1','mesa2','mesa3','mesa4','mesa5','mesa6','mesa7','mesa8','mesa9','mesa10'];
 let dishes = [
 				{name: 'Bandeja Paisa', picture: 'https://image.ibb.co/j97vGJ/Bandeja_Paisa.jpg', ingredients: ['Arroz blanco','Carne de res en polvo y sudada o asada','Chicharrón','Huevo Frito','Tajadas de Platano maduro','Chorizo Antioqueño con limón','Arepa Antioqueña','Hogao','Fríjoles Cargamanto','Tomate Rojo en Rodajas','Aguacate'], cook_time: '15 Minutos', price: '25000'},
@@ -60,6 +64,10 @@ app.get('/', (req, res) => {
 
 // URL para listar todos los Clientes
 // http://127.0.0.1:1234/clients
+
+app.get('/users', (req, res) => {
+    res.send(users)
+})
 
 app.get('/clients', (req, res) => {
     res.send(clients)

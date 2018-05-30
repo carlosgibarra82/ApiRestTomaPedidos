@@ -106,6 +106,34 @@ app.get('/users', (req, res) => {
     res.send(users)
 })
 
+// URL para Agregar un Cliente
+// http://localhost:1234/clients/?client_name=mesa12
+app.post('/users', (req, res) => {
+    let data = req.query;
+    var valueToPush = { };
+    valueToPush.username= data.username;
+    valueToPush.password = data.password;
+    users.push(valueToPush)
+    res.send("New user added")
+})
+
+// URL para actualizar un Cliente
+// http://localhost:1234/clients/0?client_name=mesa1-1
+app.patch('/clients/:id',(req, res) => {
+    let params = req.params;
+    let data = req.query;
+    clients[params.id] = data.client_name
+    res.send("Client updated")
+})
+
+// URL para eliminar un usuario
+// http://localhost:1234/clients/0
+app.delete('/clients/:id',(req, res) => {
+    let params = req.params;
+    clients.splice(params.id, 1);
+    res.send('Client deleted')
+})
+
 app.get('/clients', (req, res) => {
     res.send(clients)
 })

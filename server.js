@@ -11,11 +11,11 @@ let users = [
     {username: 'Carlos', password: '123456'}
 ];
 
-let devices = [{name: 'tablet1', id '1'},
-	       {name: 'tablet2', id '2'},
-	       {name: 'tablet3', id '3'},
-	       {name: 'tablet4', id '4'},
-	       {name: 'tablet5', id '5'}
+let devices = [{name: 'tablet1', id: '1'},
+	       {name: 'tablet2', id: '2'},
+	       {name: 'tablet3', id: '3'},
+	       {name: 'tablet4', id: '4'},
+	       {name: 'tablet5', id: '5'}
 				  
 				  ];
 let dishes = [

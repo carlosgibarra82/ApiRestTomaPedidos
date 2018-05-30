@@ -40,13 +40,43 @@ let dishes = [
 				{name: 'Salchipapas', picture: 'https://image.ibb.co/e1dfiy/Salchipapas.jpg', ingredients: ['Papas A la Francesa','Salchichas','Salsa de Tomate','Mayonesa','Sal al gusto'], cook_time: '10 Minutos', price: '7500'},
 				{name: 'Lomo a caballo', picture: 'https://image.ibb.co/cNYPAd/Lomo_a_caballo.jpg', ingredients: ['Carne de Res','Tomate','Perejil','Huevo','Platano','Yuca','Sal al gusto'], cook_time: '20 Minutos', price: '14000'},
 				{name: 'Cerdillo', picture: 'https://image.ibb.co/ckfFGJ/Cerdillo.jpg', ingredients: ['Bondiola de Cerdo','Limon','Ajo','Tomillo Seco','Sal y Pimienta'], cook_time: '45 Minutos', price: '20000'}
-				];
+		];
 let drinks = [			
-			{JugosenAgua: ['Tomate','Piña','Maracuya','Lulo','Limonada','Papaya','Mango','Mora','Borojó','Guayaba']},
-			{JugosenLeche: ['Tomate en Leche','Fresa en Leche','Maracuya en Leche','Banano en Leche','Mango en Leche','Mora en Leche','Guanabana en Leche']},
-			{Embotellados: ['Gaseosa','Jugos Hit'] },
-			{Cocteles: ['Margarita','Caipiroska','Fresa espumante','Irlandés pelirrojo','Clericot']},
-			{BebidasAlcoholicas:['Cerveza','Aguardiente','Ron','Whiskey','Tequila','Ginebra','Vodka']}
+	{tipo: 'jugoenagua', sabor: 'Tomate'},
+	{tipo: 'jugoenagua', sabor: 'Piña'},
+	{tipo: 'jugoenagua', sabor: 'Maracuya'},
+	{tipo: 'jugoenagua', sabor: 'Lulo'},
+	{tipo: 'jugoenagua', sabor: 'Limonada'},
+	{tipo: 'jugoenagua', sabor: 'Papaya'},
+	{tipo: 'jugoenagua', sabor: 'Mango'},
+	{tipo: 'jugoenagua', sabor: 'Mora'},
+	{tipo: 'jugoenagua', sabor: 'Borojó'},
+	{tipo: 'jugoenagua', sabor: 'Guayaba'},
+	{tipo: 'jugoenleche', sabor: 'Tomate'},
+	{tipo: 'jugoenleche', sabor: 'Fresa'},
+	{tipo: 'jugoenleche', sabor: 'Maracuyá'},
+	{tipo: 'jugoenleche', sabor: 'Banano'},
+	{tipo: 'jugoenleche', sabor: 'Mora'},
+	{tipo: 'jugoenleche', sabor: 'Guanabana'},
+	{tipo: 'Embotellado', sabor: 'Manzana'},
+	{tipo: 'Embotellado', sabor: 'Uva'},
+	{tipo: 'Embotellado', sabor: 'Pepsi'},
+	{tipo: 'Embotellado', sabor: 'Coca Cola'},
+	{tipo: 'Cafeteria', sabor: 'Cafe'},
+	{tipo: 'Cafeteria', sabor: 'Aromática'},
+	{tipo: 'Cafeteria', sabor: 'Chocolate'},	
+	{tipo: 'Cafeteria', sabor: 'Malteada'},	
+	{tipo: 'Cocteles', sabor: 'Margarita'},
+	{tipo: 'Cocteles', sabor: 'Caipiroska'},
+	{tipo: 'Cocteles', sabor: 'Fresa espumante'},
+	{tipo: 'Cocteles', sabor: 'Irlandés pelirrojo'},
+	{tipo: 'alcoholicas', sabor: 'Cerveza'},
+	{tipo: 'alcoholicas', sabor: 'Aguardiente'},
+	{tipo: 'alcoholicas', sabor: 'Ron'},
+	{tipo: 'alcoholicas', sabor: 'Whiskey'},
+	{tipo: 'alcoholicas', sabor: 'Tequila'},
+	{tipo: 'alcoholicas', sabor: 'Ginebra'},
+	{tipo: 'alcoholicas', sabor: 'Vodka'}
 ];
 
 let order = 	[

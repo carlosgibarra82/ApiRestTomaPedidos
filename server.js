@@ -80,12 +80,12 @@ let drinks = [
 ];
 
 let order = 	[
-					{
-						client:'mesa1',
-						dishes:['Bandeja Paisa','Cuy'],
-						drinks:['Gaseosa','Cerveza']
-					}
-				]
+			{
+				client:'mesa1',
+				dishes:['Bandeja Paisa','Cuy'],
+				drinks:['Gaseosa','Cerveza']
+			}
+		]
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

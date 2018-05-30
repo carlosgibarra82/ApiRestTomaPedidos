@@ -11,7 +11,7 @@ let users = [
     {username: 'Carlos', password: '123456'}
 ];
 
-let clients = ['mesa1','mesa2','mesa3','mesa4','mesa5','mesa6','mesa7','mesa8','mesa9','mesa10'];
+let devices = ['tablet1','tablet2','tablet3','tablet4','tablet5','tablet6','tablet7','tablet8','tablet9','tablet10'];
 let dishes = [
 				{name: 'Bandeja Paisa', picture: 'https://image.ibb.co/j97vGJ/Bandeja_Paisa.jpg', ingredients: ['Arroz blanco','Carne de res en polvo y sudada o asada','Chicharrón','Huevo Frito','Tajadas de Platano maduro','Chorizo Antioqueño con limón','Arepa Antioqueña','Hogao','Fríjoles Cargamanto','Tomate Rojo en Rodajas','Aguacate'], cook_time: '15 Minutos', price: '25000'},
 				{name: 'Frito Pastuso', picture: 'https://image.ibb.co/meTD3y/fritopastuso.jpg', ingredients: ['Carne de cerdo','Ajo','Cebolla larga','Condimento trisasón','Pimentón', 'Sal al Gusto'], cook_time: '30 Minutos', price: '18000'},

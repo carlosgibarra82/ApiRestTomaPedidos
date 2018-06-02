@@ -121,7 +121,7 @@ app.get('/users', (req, res) => {
 // URL para Agregar un Cliente
 // http://localhost:1234/clients/?client_name=mesa12
 app.post('/users', (req, res) => {
-    let data = req.query;
+    let data = req.body;
     var valueToPush = { };
     valueToPush.username= data.username;
     valueToPush.password = data.password;

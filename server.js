@@ -18,6 +18,14 @@ let devices = [
 	{name: 'tablet5', id: '5'}				  
 ];
 
+let vf_images = [
+	{image: 'https://image.ibb.co/j97vGJ/Bandeja_Paisa.jpg'},
+	{image: 'https://image.ibb.co/fgfROy/lasagna.jpg'},
+	{image: 'https://image.ibb.co/j97vGJ/Bandeja_Paisa.jpg'},
+	{image: 'https://image.ibb.co/fgfROy/lasagna.jpg'},
+	{image: 'https://image.ibb.co/j97vGJ/Bandeja_Paisa.jpg'}
+];
+
 let dishes = [
 	{name: 'Bandeja Paisa', picture: 'https://image.ibb.co/j97vGJ/Bandeja_Paisa.jpg', ingredients: ['Arroz blanco','Carne de res en polvo y sudada o asada','Chicharrón','Huevo Frito','Tajadas de Platano maduro','Chorizo Antioqueño con limón','Arepa Antioqueña','Hogao','Fríjoles Cargamanto','Tomate Rojo en Rodajas','Aguacate'], cook_time: '15 Minutos', price: '25000'},
 	{name: 'Frito Pastuso', picture: 'https://image.ibb.co/meTD3y/fritopastuso.jpg', ingredients: ['Carne de cerdo','Ajo','Cebolla larga','Condimento trisasón','Pimentón', 'Sal al Gusto'], cook_time: '30 Minutos', price: '18000'},

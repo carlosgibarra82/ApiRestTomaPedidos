@@ -126,7 +126,7 @@ app.post('/users', (req, res) => {
     valueToPush.username= data.username;
     valueToPush.password = data.password;
     users.push(valueToPush)
-    res.send("New user added")
+    res.send(users)
 })
 
 // URL para actualizar un Cliente

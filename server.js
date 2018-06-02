@@ -189,6 +189,10 @@ app.get('/dishes', (req, res) => {
     res.send(dishes)
 })
 
+app.get('/images', (req, res) => {
+    res.send(vf_images)
+})
+
 //URL para Agregar un Plato
 //localhost:1234/dishes/?name=leidy&picture=http://www.google.com.co&ingredients=leidy&ingredients=cerdillo&cook_time=20 minutes&price=50000
 

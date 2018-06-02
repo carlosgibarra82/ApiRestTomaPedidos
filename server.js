@@ -12,6 +12,8 @@ let users = [
     {username: 'Carlos', password: '123456'}
 ];
 
+var users1 = [{user: 'carlos', password: '123456'}];
+
 let devices = [{name: 'tablet1', id: '1'},
 	       {name: 'tablet2', id: '2'},
 	       {name: 'tablet3', id: '3'},
@@ -102,6 +104,16 @@ app.get('/', (req, res) => {
 
 // URL para listar todos los Clientes
 // http://127.0.0.1:1234/clients
+
+app.post('/signup' (req,res) => {
+	let data = req.body;
+	let consecutive = users.length;
+	let itemUser = {
+		username: data.user,
+		password: data.pass,
+	}
+	res.send(itemUser);
+})
 
 app.get('/users', (req, res) => {
     res.send(users)

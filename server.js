@@ -22,7 +22,7 @@ let vf_images = [
 	{image: 'https://image.ibb.co/j97vGJ/Bandeja_Paisa.jpg'},
 	{image: 'https://image.ibb.co/fgfROy/lasagna.jpg'},
 	{image: 'https://image.ibb.co/meTD3y/fritopastuso.jpg'},
-	{image: 'https://image.ibb.co/g09xVd/lomo_hawaiano.jpg'},
+	{image: 'https://image.ibb.co/d6m0iy/hamburguesa.jpg'},
 	{image: 'https://image.ibb.co/cNYPAd/Lomo_a_caballo.jpg'}
 ];
 

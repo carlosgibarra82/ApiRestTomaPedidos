@@ -185,7 +185,7 @@ app.put('/users/:username',(req,res)=>{
             if (err)
                 res.send(err);
 
-            user.namename = req.body.usernamename;  // update the bears info
+            user.password = req.body.password;  // update the bears info
 
             // save the bear
             user.save(function(err) {

@@ -96,6 +96,12 @@ let order = [
 	}
 ];
 
+lef promo = [
+	{id: '1', name: 'HAMBURGUESA', picture: 'https://image.ibb.co/d6m0iy/hamburguesa.jpg', flavor: 'GASEOSA DE MANZANA', picture: 'https://image.ibb.co/bL193T/embotellado_manzana.jpg', price: 18000},
+	{id: '2', name: 'PORCION PIZZA HAWAIANA', picture: 'https://image.ibb.co/cr0t3y/pizza.jpg', flavor: 'MALTEADA', picture: 'https://image.ibb.co/c2v2OT/malteadas.jpg', price: 12500},
+	{id: '3', name: 'SALCHIPAPAS', picture: 'https://image.ibb.co/e1dfiy/Salchipapas.jpg', flavor: 'GASEOSA COCA COLA', picture: 'https://image.ibb.co/chPkco/embotellado_cocacola.jpg', price: 10000},
+];
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

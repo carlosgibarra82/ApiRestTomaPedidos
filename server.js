@@ -178,6 +178,13 @@ app.post('/users', (req, res) => {
 //    res.send(users)
 //})
 
+app.put('/users/:_username', (req, res) => {
+	var username = req.params._username;
+	var password = req.body;
+	users[password]=data.password;
+	res.send(users)
+})
+
 app.patch('/users/:username',(req,res) =>{
 	let params = req.params;
 	let data = req.query;

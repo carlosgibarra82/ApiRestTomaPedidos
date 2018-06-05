@@ -151,6 +151,9 @@ app.patch('/users/:username',(req, res) => {
     res.send("Client updated")
 })
 
+app.get('/clients', (req, res) => {
+    res.send(clients)
+})
 // URL para actualizar un Cliente
 // http://localhost:1234/clients/0?client_name=mesa1-1
 app.patch('/clients/:id',(req, res) => {

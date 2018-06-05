@@ -168,15 +168,41 @@ app.post('/users', (req, res) => {
     res.send(users)
 })
 
-app.patch('/users/:username',(req, res) => {
-    let params = req.params;
-    let data = req.query;
-    var valueToPatch ={}
-    valueToPatch.username= users.username;
-    valueToPatch.userpassword= data.password;
-    users.patch(valueToPatch)
-    res.send(users)
-})
+//app.put('/users/:username',(req, res) => {
+//    let params = req.params;
+//    let data = req.query;
+//    var valueToPatch ={}
+//    valueToPatch.username= users.username;
+//    valueToPatch.userpassword= data.password;
+//    users.patch(valueToPatch)
+//    res.send(users)
+//})
+
+app.put('/users/:username',(req,res)=>{
+
+	users.findById(req.params.username, function(err, users) {
+
+            if (err)
+                res.send(err);
+
+            user.name = req.body.name;  // update the bears info
+
+            // save the bear
+            user.save(function(err) {
+                if (err)
+                    res.send(err);
+
+                res.json({ message: 'User updated!' });
+            });
+
+        });
+	
+}
+
+
+        
+
+
 
 app.get('/clients', (req, res) => {
     res.send(clients)

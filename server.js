@@ -147,8 +147,11 @@ app.post('/users', (req, res) => {
 app.patch('/users/:username',(req, res) => {
     let params = req.params;
     let data = req.query;
-    users[params.username] = data.password
-    res.send("Client updated")
+    var valueToPatch ={}
+    valueToPatch.username= users.username;
+    valueToPatch.userpassword= data.password;
+    users.patch(valueToPatch)
+    res.send(users)
 })
 
 app.get('/clients', (req, res) => {

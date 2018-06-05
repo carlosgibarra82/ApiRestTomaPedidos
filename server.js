@@ -178,25 +178,11 @@ app.post('/users', (req, res) => {
 //    res.send(users)
 //})
 
-app.put('/users/:username',(req,res)=>{
-
-	users.findById(req.params.username, function(err, users) {
-
-            if (err)
-                res.send(err);
-
-            user.password = req.body.password;  // update the bears info
-
-            // save the bear
-            user.save(function(err) {
-                if (err)
-                    res.send(err);
-
-                res.json({ message: 'User updated!' });
-            });
-
-        });
-	
+app.patch('/users/:username',(req,res) =>{
+	let params = req.params;
+	let data = req.query;
+	users[params.username] = data.client_name
+	res.send(users)
 })
 
 app.get('/clients', (req, res) => {

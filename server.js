@@ -11,7 +11,7 @@ let clients = [
 ]
 
 let users = [
-	{username: 'admin', password: '123'}
+	{id: '0', username: 'admin', password: '123'}
 ];
 
 let devices = [
@@ -122,7 +122,9 @@ app.get('/', (req, res) => {
 
 app.post('/signup', (req,res) => {
 	let data = req.body;
+	let consecutive = users.length;
 	let itemUser = {
+		id: consecutive,
 		username: data.user,
 		password: data.pass,
 	}

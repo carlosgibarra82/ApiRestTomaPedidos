@@ -93,7 +93,7 @@ let drinks = [
 
 let order = [
 	{
-		user:'Leidy',
+		name:'Leidy',
 		device:'tablet1',
 		dishes:['Bandeja Paisa','Cuy'],
 		drinks:['Gaseosa','Cerveza']
@@ -338,14 +338,16 @@ app.get('/order', (req, res) => {
 //URL para Agregar un Pedido
 //localhost:1234/order/?client=mesa2&dishes=Hamburguesa&dishes=Cuy&drinks=Cerveza&drinks=Gaseosas
 
+
 app.post('/order', (req, res) => {
     let data = req.query;
     var valueToPush = { };
-    valueToPush.client= data.client;
+    valueToPush.client= data.name;
+    valueToPush.device= data.device
     valueToPush.dishes = data.dishes;
     valueToPush.drinks = data.drinks;
     order.push(valueToPush)
-    res.send("New order added")
+    res.send(order)
 })
 
 // URL para actualizar un Plato

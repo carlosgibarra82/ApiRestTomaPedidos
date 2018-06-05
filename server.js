@@ -135,6 +135,26 @@ app.get('/users', (req, res) => {
     res.send(users)
 })
 
+
+app.post('/login', (req, res) => {
+    let data = req.body;
+    let login = [{searchUser: false,id: '0',username: '',password: ''}];
+
+    users.some(function (value, index, _arr) {
+        if( (value.username == data.username) && (value.password == data.password) ){
+            login[0]['searchUser'] = true;
+            login[0]['id'] = value.id;
+            login[0]['user'] = value.user;
+            login[0]['password'] = value.password;
+            return true;
+        }else{
+            return false;
+        }
+    });
+    res.send(login)
+})
+
+
 // URL para Agregar un Cliente
 // http://localhost:1234/clients/?client_name=mesa12
 app.post('/users', (req, res) => {

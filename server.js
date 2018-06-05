@@ -139,7 +139,9 @@ app.get('/users', (req, res) => {
 // http://localhost:1234/clients/?client_name=mesa12
 app.post('/users', (req, res) => {
     let data = req.body;
+    let consecutive = users.length;
     var valueToPush = { };
+    valueToPush.id =consecutive;
     valueToPush.username= data.username;
     valueToPush.password = data.password;
     users.push(valueToPush)

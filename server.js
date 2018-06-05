@@ -143,7 +143,7 @@ app.post('/users', (req, res) => {
 app.patch('/users/:id',(req, res) => {
     let params = req.params;
     let data = req.query;
-    users[params.id] = data.passwword;
+    users[params.id] = data.password;
     res.send("Client updated")
 })
 

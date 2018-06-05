@@ -140,6 +140,13 @@ app.post('/users', (req, res) => {
     res.send(users)
 })
 
+app.patch('/users/:id',(req, res) => {
+    let params = req.params;
+    let data = req.query;
+    users[params.id] = data.passwword;
+    res.send("Client updated")
+})
+
 // URL para actualizar un Cliente
 // http://localhost:1234/clients/0?client_name=mesa1-1
 app.patch('/clients/:id',(req, res) => {

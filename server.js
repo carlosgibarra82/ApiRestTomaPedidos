@@ -185,7 +185,7 @@ app.put('/users/:username',(req,res)=>{
             if (err)
                 res.send(err);
 
-            user.name = req.body.name;  // update the bears info
+            user.namename = req.body.usernamename;  // update the bears info
 
             // save the bear
             user.save(function(err) {
@@ -197,12 +197,7 @@ app.put('/users/:username',(req,res)=>{
 
         });
 	
-}
-
-
-        
-
-
+})
 
 app.get('/clients', (req, res) => {
     res.send(clients)

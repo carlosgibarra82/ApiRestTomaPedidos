@@ -96,7 +96,7 @@ let order = [
 	}
 ];
 
-lef promo = [
+let promo = [
 	{id: '1', name: 'HAMBURGUESA', picture: 'https://image.ibb.co/d6m0iy/hamburguesa.jpg', flavor: 'GASEOSA DE MANZANA', picture: 'https://image.ibb.co/bL193T/embotellado_manzana.jpg', price: 18000},
 	{id: '2', name: 'PORCION PIZZA HAWAIANA', picture: 'https://image.ibb.co/cr0t3y/pizza.jpg', flavor: 'MALTEADA', picture: 'https://image.ibb.co/c2v2OT/malteadas.jpg', price: 12500},
 	{id: '3', name: 'SALCHIPAPAS', picture: 'https://image.ibb.co/e1dfiy/Salchipapas.jpg', flavor: 'GASEOSA COCA COLA', picture: 'https://image.ibb.co/chPkco/embotellado_cocacola.jpg', price: 10000},
@@ -270,9 +270,15 @@ app.delete('/drink/:id',(req, res) => {
 // URL para listar todos los Pedidos
 // http://127.0.0.1:1234/order
 
+app.get('/promo', (req, res) => {
+    res.send(promo)
+})
+
 app.get('/order', (req, res) => {
     res.send(order)
 })
+
+
 
 //URL para Agregar un Pedido
 //localhost:1234/order/?client=mesa2&dishes=Hamburguesa&dishes=Cuy&drinks=Cerveza&drinks=Gaseosas

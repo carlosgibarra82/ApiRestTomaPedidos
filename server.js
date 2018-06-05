@@ -6,6 +6,10 @@ const app = express()
 const hostname = '127.0.0.1';
 const PORT = process.env.PORT || 1234
 
+let clients = [
+	{id: '1', client_name: 'prueba'}
+]
+
 let users = [
 	{username: 'admin', password: '123'}
 ];

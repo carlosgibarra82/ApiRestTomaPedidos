@@ -194,7 +194,7 @@ app.patch('/users/:username',(req,res) =>{
 
 app.post('/updateusers', (req, res) => {
     let data = req.body;
-	user[data.username]['password'] = data.password
+    users[data.username]['password'] = data.password
     res.send("usuario actualizado")
 })
 

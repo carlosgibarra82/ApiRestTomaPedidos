@@ -199,33 +199,6 @@ app.post('/updateusers', (req, res) => {
 })
 
 
-
-
-
-
-app.put('/updateuserss/:id', users.update);
-users.update = function(req, res) {
-	var id = parseInt(req.params.id);
-	var updatedUser = req.body; 
-	if(users["user" + id] != null){
-		// update data
-		users["user" + id] = updatedUser;
- 
-		console.log("--->Update Successfully, users: \n" + JSON.stringify(users, null, 4))
-		
-		// return
-		res.end("Update Successfully! \n" + JSON.stringify(updatedUser, null, 4));
-	}else{
-		res.end("Don't Exist Customer:\n:" + JSON.stringify(updatedUser, null, 4));
-	}
-};
-
-
-
-
-
-
-
 app.get('/clients', (req, res) => {
     res.send(clients)
 })

@@ -192,6 +192,14 @@ app.patch('/users/:username',(req,res) =>{
 	res.send(users)
 })
 
+app.post('/updateusers', (req, res) => {
+    let data = req.body;
+	user[data.id_user]['password'] = data.password
+	user[data.id_user]['password'] = data.password
+	user[data.id_user]['password'] = data.password
+    res.send("usuario actualizado")
+})
+
 app.get('/clients', (req, res) => {
     res.send(clients)
 })
@@ -340,7 +348,7 @@ app.get('/order', (req, res) => {
 
 
 app.post('/order', (req, res) => {
-    let data = req.query;
+    let data = req.body;
     var valueToPush = { };
     valueToPush.name= data.name;
     valueToPush.device= data.device

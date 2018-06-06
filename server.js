@@ -261,6 +261,23 @@ app.get('/images', (req, res) => {
     res.send(vf_images)
 })
 
+
+app.put('/updateuserss/:id', (req,res) => {
+	let id = req.params.id;
+	var updatedUser = req.body; 
+	if(users["user" + id] != null){
+		// update data
+		users["user" + password] = updatedUser;
+		// return
+		res.end("Update Successfully! \n" + JSON.stringify(updatedUser, null, 4));
+	}else{
+		res.end("Don't Exist Customer:\n:" + JSON.stringify(updatedUser, null, 4));
+	}
+};
+
+
+
+
 //URL para Agregar un Plato
 //localhost:1234/dishes/?name=leidy&picture=http://www.google.com.co&ingredients=leidy&ingredients=cerdillo&cook_time=20 minutes&price=50000
 

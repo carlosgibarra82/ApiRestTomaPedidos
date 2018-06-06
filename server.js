@@ -168,23 +168,6 @@ app.post('/users', (req, res) => {
     res.send(users)
 })
 
-//app.put('/users/:username',(req, res) => {
-//    let params = req.params;
-//    let data = req.query;
-//    var valueToPatch ={}
-//    valueToPatch.username= users.username;
-//    valueToPatch.userpassword= data.password;
-//    users.patch(valueToPatch)
-//    res.send(users)
-//})
-
-app.put('/users/:_username', (req, res) => {
-	var username = req.params._username;
-	var password = req.body;
-	users[password]=data.password;
-	res.send(users)
-})
-
 app.patch('/users/:username',(req,res) =>{
 	let params = req.params;
 	let data = req.query;
@@ -194,7 +177,7 @@ app.patch('/users/:username',(req,res) =>{
 
 app.post('/updateusers', (req, res) => {
     let data = req.body;
-    users[data.username]['password'] = data.password
+    users[data.id]['password'] = data.password
     res.send("usuario actualizado")
 })
 
@@ -260,22 +243,6 @@ app.get('/dishes', (req, res) => {
 app.get('/images', (req, res) => {
     res.send(vf_images)
 })
-
-
-app.put('/updateuserss/:id', (req,res) => {
-	let id = req.params.id;
-	var updatedUser = req.body; 
-	if(users["user" + id] != null){
-		// update data
-		users["user" + password] = updatedUser;
-		// return
-		res.end("Update Successfully! \n" + JSON.stringify(updatedUser, null, 4));
-	}else{
-		res.end("Don't Exist Customer:\n:" + JSON.stringify(updatedUser, null, 4));
-	}
-};
-
-
 
 
 //URL para Agregar un Plato

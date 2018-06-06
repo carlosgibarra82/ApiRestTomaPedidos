@@ -169,9 +169,9 @@ app.post('/users', (req, res) => {
 })
 
 app.patch('/users/:username',(req,res) =>{
-	let params = req.params;
+	let params = req.body;
 	let data = req.query;
-	users[params.username] = data.client_name
+	users[params.username] = data.username
 	res.send(users)
 })
 

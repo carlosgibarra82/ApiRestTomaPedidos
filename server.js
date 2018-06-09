@@ -96,7 +96,9 @@ let order = [
 		name:'Leidy',
 		device:'tablet1',
 		dishes:['Bandeja Paisa','Cuy'],
+		dishesquantity:['1','1'],
 		drinks:['Gaseosa','Cerveza'],
+		drinksquantity:['1','1'],
 		price:'100000'
 	}
 ];
@@ -337,7 +339,9 @@ app.post('/order', (req, res) => {
     valueToPush.name= data.user;
     valueToPush.device= data.device
     valueToPush.dishes = data.dishes;
+    valueToPush.dishesquantity = data.dishesquantity;
     valueToPush.drinks = data.drinks;
+    valueToPush.drinksquantity = data.drinksquantity;
     valueToPush.price = data.price;
     order.push(valueToPush)
     res.send(order)
